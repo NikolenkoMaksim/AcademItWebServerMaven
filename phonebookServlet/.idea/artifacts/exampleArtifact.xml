@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="exampleArtifact">
+    <output-path>$PROJECT_DIR$/out/artifacts/exampleArtifact</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="phoneBookServlet" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="dir-copy" path="$PROJECT_DIR$/lib" />
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/webapp_example/WEB-INF/web.xml" />
+      </element>
+      <element id="directory" name="js">
+        <element id="dir-copy" path="$PROJECT_DIR$/webapp_example/js" />
+      </element>
+      <element id="directory" name="css">
+        <element id="dir-copy" path="$PROJECT_DIR$/webapp_example/css" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/webapp_example/index.html" />
+    </root>
+  </artifact>
+</component>
