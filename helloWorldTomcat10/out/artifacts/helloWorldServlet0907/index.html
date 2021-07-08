@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="css/libs/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/helloWorldServlet.css"/>
+
+    <script defer src="js/libs/jquery.js"></script>
+    <script defer src="js/libs/bootstrap.bundle.js"></script>
+    <script defer src="js/libs/vue.js"></script>
+    <script defer src="js/helloWorldServlet.js"></script>
+
+    <title>Hello World!</title>
+</head>
+<body>
+<div id="app">
+    <div class="container" v-cloak>
+        <div class="row">
+            <h1 class="h2 col text-center m-3">Hello World Servlet</h1>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                Отправить Get запрос:
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <button @click="sendGet" type="button" class="btn btn-primary mt-2" aria-pressed="true">
+                    Get
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                Отправить Post запрос:
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <button @click="sendPost" type="button" class="btn btn-primary mt-2" aria-pressed="true">
+                    Post
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                Ответы отсервера
+            </div>
+        </div>
+
+        <div class="row" v-for="row in rows" :key="row.id">
+            <div class="col text-center">
+                {{ row.text }}
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

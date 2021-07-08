@@ -1,0 +1,12 @@
+body {
+    background-color: #adcbe67d;
+    color: #007bff;;
+}
+
+.btn {
+    font-weight: 700;
+}
+
+[v-cloak] {
+    display: none;
+}
